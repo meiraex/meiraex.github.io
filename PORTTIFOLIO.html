@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+<Style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 6%;
+    background: transparent;
+}
+body{
+    min-height: 100%;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/615af914e76082704c010cbc/55f72f44-82bf-458c-abd2-0f4246dba8d5/Samurai_Embers_In_Front_Of_Gate_66.gif);
+    background-size: cover;
+    
+
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+}
+
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 130px;
+    padding: 70%;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .55s ease;
+}
+
+.navlist li a:hover{
+    color: rgb(2, 2, 2);
+    transform: translateY(-5px);
+}
+.icones i:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+}
+.x{   
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    padding: 0 19%;
+    align-items: center;
+}
+
+.xtext h5{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.xtext h1{
+    font-family: 'Lora', serif;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+.icones{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icones i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.scroll{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+
+}
+.scroll i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: black;
+    background: white;
+    border-radius: 30px;
+    transition: all 50s ease;
+}
+.scroll:hover{
+    transform: translateY(-5px);
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icones{
+        padding: 0 3%;
+        transform: .2s;
+    }
+    .scroll{
+        right: 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+    .xtext{
+        padding-top: 115px;
+    }
+    .x{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+
+@media (max-width: 990px){
+ .navlist{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 40vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
+ }
+ .navlist a{
+    display: block;
+    margin: 10px 0;
+    margin-left: 0;
+}
+}
+
+</Style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">GABRIEL MEIRA</a>
+        <ul class="navlist">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="menu" id="menuicon"></div>
+    </header>
+<section class="x">
+    <div class="xtext">
+        <h5>loading...</h5>
+            <h1>FULL-STACK DEVELOPER</h1>
+            <p>specializing in front-end and mastering the art of coding.<br> for more information click on the nav above</p>
+    </div>
+    <div class="icones">
+        <a href="#"><i class="ri-github-line"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+    </div>
+</section>
+    <!--jslinkcustom-->
+    <script src="js/script.js"></script>
+<div class="scroll">
+    <a href="#"></a><i class="ri-arrow-down-fill"></i></a>
+</div>
+
+
+</body>
+</html>
